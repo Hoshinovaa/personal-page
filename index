@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakan Zah | Personal Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #38bdf8;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero p{
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 24px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+section{
+    padding:70px 0;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="hero">
+        <img src="profile.jpg" alt="Profile">
+        <h1>Rakan Zah</h1>
+        <p>Informatics Student | Cyber Security Enthusiast</p>
+
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Rakan Zah, an Informatics student interested in
+            Cyber Security, Cloud Computing, and Software Development.
+            I enjoy learning new technologies and building useful applications.
+        </p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+
+        <div class="card-container">
+            <div class="card">Python</div>
+            <div class="card">Flutter</div>
+            <div class="card">Cyber Security</div>
+            <div class="card">Cloud Computing</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>KlikTelU</h3>
+                <p>Mobile application built with Flutter.</p>
+            </div>
+
+            <div class="card">
+                <h3>Velmont Attendance</h3>
+                <p>Attendance monitoring web system.</p>
+            </div>
+
+            <div class="card">
+                <h3>Decision Tree & KNN</h3>
+                <p>Machine learning classification project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>📧 your-email@gmail.com</p>
+        <p>🐙 github.com/username</p>
+        <p>💼 linkedin.com/in/username</p>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Rakan Zah
+</footer>
+
+</body>
+</html>
